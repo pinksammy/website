@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+  
+  div {
+    border: 8px solid #f0e6e6;
+    border-radius: 20px;
+    width: 70%;
+    height: 800px;
+    margin: 50px auto;
+    background: linear-gradient(90deg, #557ef0, #2c42a3);
+  }
+
+
