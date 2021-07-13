@@ -1,14 +1,62 @@
 body {
-    background-color: black;
+    background-image: url("images/ff4.png");
+    background-color: #94acce;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-  
-  div {
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.big-menu {
     border: 8px solid #f0e6e6;
     border-radius: 20px;
-    width: 70%;
-    height: 800px;
-    margin: 50px auto;
-    background: linear-gradient(90deg, #557ef0, #2c42a3);
-  }
+    width: calc(75% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: auto;
+    box-sizing: border-box;
+    background: linear-gradient(#557ef0, #2c42a3);
+}
 
+.select-menu {
+    border: 8px solid #f0e6e6;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    height: 600px;
+    margin-top: 50px;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: linear-gradient(#557ef0, #2c42a3);
+}
 
+.main-text {
+    color: #f0e6e6;
+    font-size: 14px;
+    font-family: Verdana;
+}
+
+.menu-text {
+    color: #f0e6e6;
+    font-size: 25px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.menu-pad {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.select-menu.menu-pad.menu-text p {
+    padding: 2px;
+    margin: 0;
+}
