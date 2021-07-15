@@ -5,6 +5,10 @@ body {
     background-position: center;
 }
 
+#itemWidget, #magicWidget {
+    display: none;
+}
+
 .wrapper {
     width: 60%;
     margin: 0 auto;
@@ -56,7 +60,13 @@ body {
     padding-left: 40px;
 }
 
-.select-menu.menu-pad.menu-text p {
+ul {
+    list-style-type: none;
     padding: 2px;
     margin: 0;
+}
+
+ul > li:hover {
+    background-color: #526086;
+    cursor: pointer;
 }
