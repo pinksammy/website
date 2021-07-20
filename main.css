@@ -99,3 +99,9 @@ ul.link>li:hover {
     background-color: #7b8fc7;
     cursor: pointer;
 }
+
+.whm {
+    float: right;
+    width: 100px;
+    height: 145px;
+}
