@@ -25,14 +25,28 @@
             <span id="itemWidget">sammy is cool</span>
             <span id="magicWidget">nemo is fat</span>
         </div>
-        <div class="select-menu menu-pad menu-text">
-            <ul>
-                <li id="item">Item</li>
-                <li id="magic">Magic</li>
-                <li>Equip</li>
-                <li>Status</li>
-            </ul>
+        <div class="menu-wrapper">
+            <div class="select-menu select-menu-pad menu-text">
+                <ul class="link">
+                    <li id="item">Item</li>
+                    <li id="magic">Magic</li>
+                    <li>Equip</li>
+                    <li>Status</li>
+                </ul>
 
+            </div>
+            <div class="small-menu small-menu-pad main-text">
+                <span>DATE:
+                    <ul>
+                        <script> document.write(new Date().toLocaleDateString());</script>
+                    </ul>
+                </span>
+                <span>MOON PHASE:
+                    <ul>
+                        <script> document.write(moon_phase(new Date(Date.now())));</script>
+                    </ul>
+                </span>
+            </div>
         </div>
     </div>
 </body>

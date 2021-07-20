@@ -14,6 +14,11 @@ body {
     margin: 0 auto;
 }
 
+.menu-wrapper {
+    display: inline-block;
+    width: calc(25% - 20px);
+}
+
 .big-menu {
     border: 8px solid #f0e6e6;
     border-radius: 20px;
@@ -22,7 +27,6 @@ body {
     vertical-align: top;
     height: 600px;
     margin-top: 50px;
-    margin-left: auto;
     box-sizing: border-box;
     background: linear-gradient(#557ef0, #2c42a3);
 }
@@ -31,11 +35,22 @@ body {
     border: 8px solid #f0e6e6;
     border-radius: 20px;
     display: inline-block;
+    width: 80%;
     vertical-align: top;
-    width: calc(25% - 20px);
-    height: 600px;
+    height: 450px;
     margin-top: 50px;
-    margin-right: auto;
+    box-sizing: border-box;
+    background: linear-gradient(#557ef0, #2c42a3);
+}
+
+.small-menu {
+    border: 8px solid #f0e6e6;
+    border-radius: 20px;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    height: 150px;
+    margin-top: 0px;
     box-sizing: border-box;
     background: linear-gradient(#557ef0, #2c42a3);
 }
@@ -60,13 +75,27 @@ body {
     padding-left: 40px;
 }
 
-ul {
+.select-menu-pad {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.small-menu-pad {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.link {
     list-style-type: none;
     padding: 2px;
     margin: 0;
 }
 
-ul > li:hover {
-    background-color: #526086;
+ul.link>li:hover {
+    background-color: #7b8fc7;
     cursor: pointer;
 }
