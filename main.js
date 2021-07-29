@@ -14,10 +14,19 @@ function setupMagic() {
         $("#magicWidget").show();
     })
 }
+function setupStatus() {
+    var statusElement = $("#status");
+
+    statusElement.click(function () {
+        hideAllWidgets();
+        $("#statusWidget").show();
+    })
+}
 function hideAllWidgets() {
     $("#mainWidget").hide();
     $("#itemWidget").hide();
     $("#magicWidget").hide();
+    $("#statusWidget").hide();
 }
 function moon_phase(date) { // ported from http://www.voidware.com/moon_phase.htm
     var year = date.getYear(),
@@ -53,3 +62,4 @@ function moon_phase(date) { // ported from http://www.voidware.com/moon_phase.ht
 //document.write(moon_phase(new Date(Date.now())))
 $(document).ready(setupItem);
 $(document).ready(setupMagic);
+$(document).ready(setupStatus);

@@ -5,7 +5,7 @@ body {
     background-position: center;
 }
 
-#itemWidget, #magicWidget {
+#itemWidget, #magicWidget, #statusWidget {
     display: none;
 }
 
@@ -101,8 +101,50 @@ ul.link>li:hover {
     cursor: pointer;
 }
 
-.whm {
+.external-link {
+    color: #f0e6e6;
+
+}
+
+.external-link:active {
+    color: #fa557c;
+}
+
+.external-link:hover {
+    background-color: #7b8fc7;
+    cursor: pointer;
+}
+
+.whm-main {
     float: right;
     width: 100px;
     height: 145px;
+}
+
+.whm-party {
+    float: left;
+    width: 120px;
+    height: 174px;
+    padding-right: 50px;
+}
+
+.cat-party {
+    float: left;
+    clear: both;
+    width: 60px;
+    height: 87px;
+    padding-right: 50px;
+    padding-top: 87px;
+    padding-left: 60px;
+}
+
+.party-table {
+    font-size: 20px;
+    width: 50%;
+    border-collapse: collapse;
+    border: 0px solid black;
+  }
+
+.party-padding {
+    padding-top: 120px;
 }
