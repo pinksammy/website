@@ -787,9 +787,10 @@ var magicTableAData = [
       maximumValue: 11,
     },
     {
-      name: "Figurine of wondrous power (ROLL d8)", // TODO: mini table with list
+      name: "Figurine of wondrous power (ROLL d8)",
       minimumValue: 12,
       maximumValue: 14,
+      subTable: magicTableFigurineData,
     },
     {
       name: "Adamantine armor (breastplate)",
@@ -1716,7 +1717,7 @@ var magicTableAData = [
       maximumValue: 75,
     },
     {
-      name: "Magic armor (ROLL D12)",  // TODO: make mini table, code it etc
+      name: "Magic armor (ROLL D12)",
       minimumValue: 76,
       maximumValue: 76,
       subTable: magicTableArmorData
