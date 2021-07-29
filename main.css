@@ -29,6 +29,7 @@ body {
     margin-top: 50px;
     box-sizing: border-box;
     background: linear-gradient(#557ef0, #2c42a3);
+    overflow: auto;
 }
 
 .select-menu {
