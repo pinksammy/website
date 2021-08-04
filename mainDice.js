@@ -109,6 +109,8 @@ function genericTable(magicTableData) {
 
         if (min <= diceRoll && diceRoll <= max) {
             console.log(min + "-" + max + " " + name)
+            addItemToPage(name) // add to list on main page
+
             var subTable = magicItemData.subTable
             if (subTable) {
                 genericTable(subTable);
@@ -119,5 +121,23 @@ function genericTable(magicTableData) {
         return false;
     })
 }
+function clearPreviousItems() {
+    $("#itemList>li").remove();
+}
+function addItemToPage(name) {
+    var itemListElement = $("#itemList");
+    var itemElement = $("<li></li>");
 
-treasureHoardTier1()
+    itemElement.text(name);
+    itemListElement.append(itemElement);
+}
+function setupTreasureButton() {
+    var treasureButton = $("#treasureButton");
+
+    treasureButton.click(function () {
+        clearPreviousItems();
+        treasureHoardTier1();
+    })
+}
+
+$(document).ready(setupTreasureButton);
