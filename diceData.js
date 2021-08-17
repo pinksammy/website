@@ -1,3 +1,78 @@
+var magicTableArmorData = [
+  {
+    name: "Magic Armor, +2 half plate",
+    minimumValue: 1,
+    maximumValue: 2,
+  },
+  {
+    name: "Magic Armor, +2 plate",
+    minimumValue: 3,
+    maximumValue: 4,
+  },
+  {
+    name: "Magic Armor, +3 studded leather",
+    minimumValue: 5,
+    maximumValue: 6,
+  },
+  {
+    name: "Magic Armor, +3 breastplate",
+    minimumValue: 7,
+    maximumValue: 8,
+  },
+  {
+    name: "Magic Armor, +3 splint",
+    minimumValue: 9,
+    maximumValue: 10,
+  },
+  {
+    name: "Magic Armor, +3 half plate",
+    minimumValue: 11,
+    maximumValue: 11,
+  },
+  {
+    name: "Magic Armor, +3 plate",
+    minimumValue: 12,
+    maximumValue: 12,
+  }
+];
+var magicTableFigurineData = [
+  {
+    name: "Figurine of wondrous power (Bronze griffon)",
+    minimumValue: 1,
+    maximumValue: 1,
+  },
+  {
+    name: "Figurine of wondrous power (Ebony fly)",
+    minimumValue: 2,
+    maximumValue: 2,
+  },
+  {
+    name: "Figurine of wondrous power (Golden lions)",
+    minimumValue: 3,
+    maximumValue: 3,
+  },
+  {
+    name: "Figurine of wondrous power (Ivory goats)",
+    minimumValue: 4,
+    maximumValue: 4,
+  },
+  {
+    name: "Figurine of wondrous power (Marble elephant)",
+    minimumValue: 5,
+    maximumValue: 5,
+  },
+  {
+    name: "Figurine of wondrous power (Onyx dog)",
+    minimumValue: 6,
+    maximumValue: 7,
+  },
+  {
+    name: "Figurine of wondrous power (Serpentine owl)",
+    minimumValue: 8,
+    maximumValue: 8,
+  }
+];
+
 var magicTableAData = [
   {
     name: "Potion of healing",
@@ -1841,79 +1916,5 @@ var magicTableIData = [
     name: "Tome of the stilled tongue",
     minimumValue: 100,
     maximumValue: 100,
-  }
-];
-var magicTableFigurineData = [
-  {
-    name: "Bronze griffon",
-    minimumValue: 1,
-    maximumValue: 1,
-  },
-  {
-    name: "Ebony fly",
-    minimumValue: 2,
-    maximumValue: 2,
-  },
-  {
-    name: "Golden lions",
-    minimumValue: 3,
-    maximumValue: 3,
-  },
-  {
-    name: "Ivory goats",
-    minimumValue: 4,
-    maximumValue: 4,
-  },
-  {
-    name: "Marble elephant",
-    minimumValue: 5,
-    maximumValue: 5,
-  },
-  {
-    name: "Onyx dog",
-    minimumValue: 6,
-    maximumValue: 7,
-  },
-  {
-    name: "Serpentine owl",
-    minimumValue: 8,
-    maximumValue: 8,
-  }
-];
-var magicTableArmorData = [
-  {
-    name: "Magic Armor, +2 half plate",
-    minimumValue: 1,
-    maximumValue: 2,
-  },
-  {
-    name: "Magic Armor, +2 plate",
-    minimumValue: 3,
-    maximumValue: 4,
-  },
-  {
-    name: "Magic Armor, +3 studded leather",
-    minimumValue: 5,
-    maximumValue: 6,
-  },
-  {
-    name: "Magic Armor, +3 breastplate",
-    minimumValue: 7,
-    maximumValue: 8,
-  },
-  {
-    name: "Magic Armor, +3 splint",
-    minimumValue: 9,
-    maximumValue: 10,
-  },
-  {
-    name: "Magic Armor, +3 half plate",
-    minimumValue: 11,
-    maximumValue: 11,
-  },
-  {
-    name: "Magic Armor, +3 plate",
-    minimumValue: 12,
-    maximumValue: 12,
   }
 ];

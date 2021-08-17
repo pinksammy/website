@@ -279,12 +279,14 @@ function genericTable(magicTableData) {
 
         if (min <= diceRoll && diceRoll <= max) {
             console.log(min + "-" + max + " " + name)
-            addItemToPage(name) // add to list on main page
 
             var subTable = magicItemData.subTable
             if (subTable) {
                 genericTable(subTable);
+            } else {
+                addItemToPage(name) // add to list on main page
             }
+
             return true;
         }
 
