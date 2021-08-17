@@ -232,7 +232,13 @@ function rollOnTableArmor() {
         return genericTable(magicTableArmorData);
     });
 }
-
+function rollOnTableFigurine() {
+    var diceRoll8 = diceRollD8();
+    var magicItemList = new Array(diceRoll8).fill(null);
+    return magicItemList.map(function () {
+        return genericTable(magicTableFigurineData);
+    });
+}
 function diceRollD6() {
     return diceRollDX(6);
 }
