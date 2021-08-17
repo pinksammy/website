@@ -212,10 +212,17 @@ function rollOnTableG(numberOfRolls) {
         return genericTable(magicTableGData);
     });
 }
+
 function rollOnTableH(numberOfRolls) {
     var magicItemList = new Array(numberOfRolls).fill(null);
     return magicItemList.map(function () {
         return genericTable(magicTableHData);
+    });
+}
+function rollOnTableI(numberOfRolls) {
+    var magicItemList = new Array(numberOfRolls).fill(null);
+    return magicItemList.map(function () {
+        return genericTable(magicTableIData);
     });
 }
 function rollOnTableArmor() {
@@ -293,8 +300,17 @@ function checkButton() {
     if (document.getElementById("0-4").checked) {
         return treasureHoardTier1();
     }
-
+    else if (document.getElementById("5-10").checked) {
+        return treasureHoardTier2();
+    }
+    else if (document.getElementById("11-16").checked) {
+        return treasureHoardTier3();
+    }
+    else if (document.getElementById("17+").checked) {
+        return treasureHoardTier4();
+    }
 }
+
 function onTreasureButtonClick() {
     clearPreviousItems();
     checkButton();
