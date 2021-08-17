@@ -1720,7 +1720,7 @@ var magicTableIData = [
     name: "Magic armor (ROLL D12)",
     minimumValue: 76,
     maximumValue: 76,
-    subTable: magicTableArmorData
+    subTable: magicTableArmorData,
   },
   {
     name: "Apparatus of Kwalish",
@@ -1882,37 +1882,37 @@ var magicTableFigurineData = [
 ];
 var magicTableArmorData = [
   {
-    name: "Armor, +2 half plate",
+    name: "Magic Armor, +2 half plate",
     minimumValue: 1,
     maximumValue: 2,
   },
   {
-    name: "Armor, +2 plate",
+    name: "Magic Armor, +2 plate",
     minimumValue: 3,
     maximumValue: 4,
   },
   {
-    name: "Armor, +3 studded leather",
+    name: "Magic Armor, +3 studded leather",
     minimumValue: 5,
     maximumValue: 6,
   },
   {
-    name: "Armor, +3 breastplate",
+    name: "Magic Armor, +3 breastplate",
     minimumValue: 7,
     maximumValue: 8,
   },
   {
-    name: "Armor, +3 splint",
+    name: "Magic Armor, +3 splint",
     minimumValue: 9,
     maximumValue: 10,
   },
   {
-    name: "Armor, +3 half plate",
+    name: "Magic Armor, +3 half plate",
     minimumValue: 11,
     maximumValue: 11,
   },
   {
-    name: "Armor, +3 plate",
+    name: "Magic Armor, +3 plate",
     minimumValue: 12,
     maximumValue: 12,
   }
