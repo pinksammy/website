@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>treasure roller</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='dice.css'>
     <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
     <script src='diceData.js'></script>
     <script src='mainDice.js'></script>
 </head>
+
 <body>
-    <button id="treasureButton">Roll Dice</button>
+    <h3>Treasure Hoard</h3>
+    <p>Roll on a table of treasure, based on the Challenge Rating of your encounter.</p>
+    <p>Choose your Challenge Rating:</p>
+    <input type="radio" id="0-4" name="challenge_rating" value="0 to 4">
+    <label for="0-4">0 to 4</label><br>
+    <input type="radio" id="5-10" name="challenge_rating" value="5 to 10">
+    <label for="0-4">5 to 10</label><br>
+    <input type="radio" id="11-16" name="challenge_rating" value="11 to 16">
+    <label for="0-4">11 to 16</label><br>
+    <input type="radio" id="17+" name="challenge_rating" value="17+">
+    <label for="0-4">17+</label><br><br>
+    <input type="submit" onclick="onTreasureButtonClick()" value="Roll Dice!">
+
+
     <ul id="itemList">
-        
+
     </ul>
-    
+
 </body>
+
 </html>

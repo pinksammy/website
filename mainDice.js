@@ -2,7 +2,7 @@ function treasureHoardTier1() {
     var diceRoll = diceRollD100();
     console.log("initial hoard roll: ", diceRoll);
     if (diceRoll <= 36) {
-        console.log("Nothing!")
+        addItemToPage("Nothing!")
         return
     }
     if (diceRoll <= 60) {
@@ -37,7 +37,7 @@ function treasureHoardTier2() {
     var diceRoll = diceRollD100();
     console.log("initial hoard roll: ", diceRoll);
     if (diceRoll <= 28) {
-        console.log("Nothing!")
+        addItemToPage("Nothing!")
         return
     }
     if (diceRoll <= 44) {
@@ -83,7 +83,7 @@ function treasureHoardTier3() {
     var diceRoll = diceRollD100();
     console.log("initial hoard roll: ", diceRoll);
     if (diceRoll <= 15) {
-        console.log("Nothing!")
+        addItemToPage("Nothing!")
         return
     }
     if (diceRoll <= 29) {
@@ -132,7 +132,7 @@ function treasureHoardTier4() {
     var diceRoll = diceRollD100();
     console.log("initial hoard roll: ", diceRoll);
     if (diceRoll <= 2) {
-        console.log("Nothing!")
+        addItemToPage("Nothing!")
         return
     }
     if (diceRoll <= 14) {
@@ -288,13 +288,15 @@ function addItemToPage(name) {
     itemElement.text(name);
     itemListElement.append(itemElement);
 }
-function setupTreasureButton() {
-    var treasureButton = $("#treasureButton");
 
-    treasureButton.click(function () {
-        clearPreviousItems();
-        treasureHoardTier1();
-    })
+function checkButton() {
+    if (document.getElementById("0-4").checked) {
+        return treasureHoardTier1();
+    }
+
+}
+function onTreasureButtonClick() {
+    clearPreviousItems();
+    checkButton();
 }
 
-$(document).ready(setupTreasureButton);
